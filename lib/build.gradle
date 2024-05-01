@@ -1,0 +1,34 @@
+plugins {
+  id("java")
+  id("application")
+  id("com.github.johnrengelman.shadow") version "6.0.0"
+}
+
+mainClassName = "random.bot.Main"
+
+version '1.0.1'
+
+sourceCompatibility = 1.16
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+  maven {
+      url "https://m2.dv8tion.net/releases"
+  }
+}
+
+dependencies {
+  implementation("net.dv8tion:JDA:4.3.0_330")
+  implementation("ch.qos.logback:logback-classic:1.2.3")
+  implementation project(':jcraronlib-basic')
+}
+
+jar {
+    archivesBaseName  = 'RandomBot server'
+    manifest {
+        attributes 'Main-Class': 'random.bot.Main'
+    }
+}
+
+compileJava.options.encoding = "UTF-8"
