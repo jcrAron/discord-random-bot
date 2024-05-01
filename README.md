@@ -2,6 +2,8 @@ discord 機器人
 ===================
 幾個選項給機器人，隨機挑一個出來
 
+<br/><img src="https://github.com/jcrAron/discord-random-bot/blob/main/discord-random-bot.png">
+
 #### 注意!
 * 已停止更新
 * 這裡沒有完整的code
